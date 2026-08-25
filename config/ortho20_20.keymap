@@ -68,6 +68,16 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <23 22>;
         };
+
+        bootloader-right {
+            bindings = <&bootloader>;
+            key-positions = <11 42>;
+        };
+
+        bootloader-left {
+            bindings = <&bootloader>;
+            key-positions = <0 41>;
+        };
     };
 
     keymap {
@@ -75,55 +85,55 @@
 
         layer0 {
             bindings = <
-&lt 4 ESCAPE        &lt 3 Q           &lt 1 W             &kp E           &kp R               &kp T           &kp Y            &kp U                &kp I               &kp O                &kp P                      &mt MINUS BACKSPACE
-&mt LEFT_SHIFT TAB  &hm LEFT_SHIFT A  &hm LEFT_COMMAND S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G           &kp H            &hm RIGHT_CONTROL J  &hm RIGHT_ALT K     &hm RIGHT_COMMAND L  &hm RIGHT_SHIFT SEMICOLON  &mt BACKSLASH ENTER
-&kp LEFT_COMMAND    &kp Z             &kp X               &kp C           &kp V               &kp B           &kp N            &kp M                &kp COMMA           &kp PERIOD           &kp SLASH                  &lt 5 SQT
-&lt 3 DELETE        &kp ENTER           &mt LALT TAB       &none           &none               &none           &lt 1 BACKSPACE  &lt 2 SPACE          &mt CAPSLOCK GRAVE  &none                &none                      &none
+&lt 4 ESCAPE        &lt 3 Q           &lt 1 W             &kp E           &kp R               &kp T      &kp Y            &kp U                &kp I               &kp O                &kp P                      &mt MINUS BACKSPACE
+&mt LEFT_SHIFT TAB  &hm LEFT_SHIFT A  &hm LEFT_COMMAND S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G      &kp H            &hm RIGHT_CONTROL J  &hm RIGHT_ALT K     &hm RIGHT_COMMAND L  &hm RIGHT_SHIFT SEMICOLON  &mt BACKSLASH ENTER
+&kp LEFT_COMMAND    &kp Z             &kp X               &kp C           &kp V               &kp B      &kp N            &kp M                &kp COMMA           &kp PERIOD           &kp SLASH                  &lt 5 SQT
+&none               &none             &none               &lt 3 DELETE    &kp ENTER           &lt 3 TAB  &lt 1 BACKSPACE  &lt 2 SPACE          &mt CAPSLOCK GRAVE  &none                &none                      &none
             >;
         };
 
         numbers_fs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N7  &kp N8  &kp N9  &kp PLUS      &kp MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N4  &kp N5  &kp N6  &kp ASTERISK  &kp SLASH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N1  &kp N2  &kp N3  &kp PERIOD    &kp COMMA  &trans
-&trans  &trans  &trans  &none    &none  &none      &trans  &kp N0  &trans  &none         &none      &none
+&trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp N8  &kp N9  &kp PLUS      &kp MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp N4        &kp N5  &kp N6  &kp ASTERISK  &kp SLASH  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp N1        &kp N2  &kp N3  &kp PERIOD    &kp COMMA  &trans
+&trans  &trans  &trans  &none   &none   &none   &kp NUMBER_0  &none   &trans  &none         &none      &none
             >;
         };
 
         arrows_multi {
             bindings = <
-&kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LG(LS(NUMBER_4))  &kp LG(LC(LS(NUMBER_4)))  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &kp HOME       &kp END   &kp UP    &trans     &trans  &trans
-&trans            &trans            &trans                &hm LALT C_MUTE           &kp C_VOL_DN          &kp C_VOLUME_UP         &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans            &trans            &trans                &kp C_PREV                &kp C_PLAY            &kp C_NEXT              &kp PAGE_DOWN  &trans    &trans    &trans     &trans  &trans
-&trans            &trans            &trans                &none                     &none                &none                   &trans         &trans    &trans    &none      &none    &none
+&kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LG(LS(NUMBER_4))  &kp LG(LC(LS(NUMBER_4)))  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp HOME       &kp END   &kp UP    &trans     &trans  &trans
+&trans            &trans            &trans                &hm LALT C_MUTE           &kp C_VOL_DN          &kp C_VOLUME_UP       &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans            &trans            &trans                &kp C_PREV                &kp C_PLAY            &kp C_NEXT            &kp PAGE_DOWN  &trans    &trans    &trans     &trans  &trans
+&trans            &trans            &trans                &none                     &none                 &none                 &trans         &trans    &trans    &none      &none   &none
             >;
         };
 
         coding_symb {
             bindings = <
-&trans  &trans  &kp LA(LG(LEFT_ARROW))  &kp RG(RA(RIGHT))     &kp LG(W)  &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE            &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans  &trans                  &trans                &none      &none     &kp LEFT              &kp UP_ARROW           &kp DOWN_ARROW            &kp RIGHT        &kp DELETE        &trans
-&trans  &none   &none                   &trans                &none      &trans    &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN             &kp END          &trans            &trans
-&kp LS(LG(NUMBER_4))  &trans  &trans     &none                &none      &none     &trans                &trans                 &kp LG(LC(LS(NUMBER_4))) &none           &none            &none
+&trans                &trans  &kp LA(LG(LEFT_ARROW))  &kp RG(RA(RIGHT))  &kp LG(W)  &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE            &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans                &trans  &trans                  &trans             &none      &none   &kp LEFT              &kp UP_ARROW           &kp DOWN_ARROW            &kp RIGHT        &kp DELETE        &trans
+&trans                &none   &none                   &trans             &none      &trans  &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN             &kp END          &trans            &trans
+&kp LS(LG(NUMBER_4))  &trans  &trans                  &none              &none      &none   &trans                &trans                 &kp LG(LC(LS(NUMBER_4)))  &none            &none             &none
             >;
         };
 
         numbers_top {
             bindings = <
-&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &kp BACKSPACE
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp F1  &kp F2           &kp F3        &kp F4        &kp F5        &kp F6         &kp F7        &kp F8         &kp F9        &kp F10               &kp F11                &kp F12
-&trans  &trans            &trans        &none         &none         &none          &trans        &trans         &trans        &none                 &none                  &none
+&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp N7         &kp N8        &kp N9                &kp N0                 &kp BACKSPACE
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT  &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp F1  &kp F2           &kp F3        &kp F4        &kp F5        &kp F6       &kp F7        &kp F8         &kp F9        &kp F10               &kp F11                &kp F12
+&trans  &trans           &trans        &none         &none         &none        &trans        &trans         &trans        &none                 &none                  &none
             >;
         };
 
         bluetooth_profiles {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans        &trans        &none
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &none    &none  &none     &trans        &sys_reset    &bootloader   &none          &none          &none
+&trans      &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &none
+&trans      &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR
+&sys_reset  &trans  &trans  &none   &none   &none   &none         &none         &none         &none         &none         &sys_reset
             >;
         };
     };

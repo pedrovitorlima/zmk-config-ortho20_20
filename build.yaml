@@ -32,4 +32,9 @@ include:
     shield: ortho20_20_right
 
   - board: nice_nano_v2
+    shield: ortho20_20_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=n
+    artifact-name: ortho20_20_right_usb_test
+
+  - board: nice_nano_v2
     shield: settings_reset

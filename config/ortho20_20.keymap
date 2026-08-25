@@ -96,7 +96,7 @@
             bindings = <
 &kp GRAVE  &kp NUMBER_1            &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4             &kp N5       &kp NUMBER_6  &kp N7                  &kp N8          &kp N9                     &kp N0                        &kp EQUAL
 &kp TILDE  &hm LSHIFT EXCLAMATION  &hm LGUI AT   &hm LALT HASH  &hm LEFT_CONTROL DOLLAR  &kp PERCENT  &kp CARET     &hm RIGHT_CONTROL AMPS  &hm RALT ASTRK  &hm RGUI LEFT_PARENTHESIS  &hm RSHIFT RIGHT_PARENTHESIS  &kp PLUS
-&kp F1     &kp F2                  &kp F3        &kp F4         &kp F5                   &kp F6       &kp F7        &kp MINUS               &kp PLUS        &kp LEFT_BRACKET           &kp RIGHT_BRACKET             &kp NON_US_BACKSLASH
+&kp F1     &kp F2                  &kp F3        &kp F4         &kp F5                   &kp F6       &trans        &kp MINUS               &kp PLUS        &kp LEFT_BRACKET           &kp RIGHT_BRACKET             &kp NON_US_BACKSLASH
 &kp F7     &kp F8                  &kp F9        &kp F10        &kp F11                  &kp F12      &trans        &trans                  &kp HOME        &kp END                    &kp PAGE_UP                   &kp PAGE_DOWN
             >;
         };

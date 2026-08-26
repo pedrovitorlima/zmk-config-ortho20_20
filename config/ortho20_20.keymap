@@ -97,14 +97,14 @@
 &kp GRAVE  &kp NUMBER_1            &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4             &kp N5       &kp NUMBER_6  &kp N7                  &kp N8          &kp N9                     &kp N0                        &kp EQUAL
 &kp TILDE  &hm LSHIFT EXCLAMATION  &hm LGUI AT   &hm LALT HASH  &hm LEFT_CONTROL DOLLAR  &kp PERCENT  &kp CARET     &hm RIGHT_CONTROL AMPS  &hm RALT ASTRK  &hm RGUI LEFT_PARENTHESIS  &hm RSHIFT RIGHT_PARENTHESIS  &kp PLUS
 &kp F1     &kp F2                  &kp F3        &kp F4         &kp F5                   &kp F6       &trans        &kp MINUS               &kp PLUS        &kp LEFT_BRACKET           &kp RIGHT_BRACKET             &kp NON_US_BACKSLASH
-&kp F7     &kp F8                  &kp F9        &kp F10        &kp F11                  &kp F12      &trans        &trans                  &kp HOME        &kp END                    &kp PAGE_UP                   &kp PAGE_DOWN
+&kp F7     &kp F8                  &kp F9        &kp F10        &kp F11                  &kp F12      &trans        &trans                  &trans          &trans                     &trans                        &trans
             >;
         };
 
         special {
             bindings = <
 &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LG(LS(NUMBER_4))  &kp LG(LC(LS(NUMBER_4)))  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &trans    &trans       &trans         &bt BT_CLR
-&trans            &trans            &trans                &hm LALT C_MUTE           &kp C_VOL_DN          &kp C_VOLUME_UP       &trans  &trans  &trans    &trans       &trans         &trans
+&trans            &trans            &trans                &hm LALT C_MUTE           &kp C_VOL_DN          &kp C_VOLUME_UP       &trans  &trans  &trans    &trans       &trans         &kp ENTER
 &trans            &trans            &trans                &kp C_PREV                &kp C_PLAY            &kp C_NEXT            &trans  &trans  &trans    &trans       &trans         &trans
 &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3              &bt BT_SEL 4          &trans                &trans  &trans  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END
             >;
@@ -112,8 +112,8 @@
 
         calculator {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp N8  &kp N9  &kp PLUS      &kp MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp N4        &kp N5  &kp N6  &kp ASTERISK  &kp SLASH  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp N8  &kp N9  &kp PLUS      &kp MINUS  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans  &kp N4        &kp N5  &kp N6  &kp ASTERISK  &kp SLASH  &kp ENTER
 &trans  &trans  &trans  &trans  &trans  &trans  &kp N1        &kp N2  &kp N3  &kp PERIOD    &kp COMMA  &trans
 &trans  &trans  &trans  &none   &none   &none   &kp NUMBER_0  &none   &trans  &none         &none      &none
             >;

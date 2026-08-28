@@ -78,6 +78,16 @@
             bindings = <&bootloader>;
             key-positions = <0 41>;
         };
+
+        zmk-studio-left {
+            bindings = <&studio_unlock>;
+            key-positions = <36 41>;
+        };
+
+        zmk-studio-right {
+            bindings = <&studio_unlock>;
+            key-positions = <47 42>;
+        };
     };
 
     keymap {
